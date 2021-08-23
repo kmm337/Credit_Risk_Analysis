@@ -1,11 +1,11 @@
 # Credit_Risk_Analysis
 
+## Overview
+
 The purpose of this analysis is to predict credit risk using a dataset from LendingClub, a peer-to-peer lending services company. The
 challenge is in handling the imbalance between the numbers of high and low risk loans in the dataset. 
 
 Six different models will be assessed. Four will utilize different sampling algorithms followed by a logistic regression. Two models will employ emsemble classifiers. 
-
-## Overview
 
 ## Results
 
@@ -15,32 +15,34 @@ The comparison below shows the six different algorithms against various metrics:
 
 ![comparison](/Images/comparison.PNG)
 
-Precision is a measure of: given a prediction of high risk, how likely is it that the loan is actually high risk? Low precision means a high likelihood of falsely predicting an actually low risk loan as high risk.
+* Precision is a measure of: given a prediction of high risk, how likely is it that the loan is actually high risk? Low precision means a high likelihood of falsely predicting an actually low risk loan as high risk.
 
-All of our algorithms exhibit low precision.
+  All of our algorithms exhibit low precision.
 
-Recall is a measure of: given a loan is actually high risk, how likely is it that the algorithm identified it as high risk? High recall means a high likelihood of predicting a high risk loan correctly.
+* Recall is a measure of: given a loan is actually high risk, how likely is it that the algorithm identified it as high risk? High recall means a high likelihood of predicting a high risk loan correctly.
 
-Only the Easy Ensemble Classifier shows recall over 90%. All the other algorithms hover around 70%
+  Only the Easy Ensemble Classifier shows recall over 90%. All the other algorithms hover around 70%
 
-For this analysis, recall is more important than precision, assuming the loss associated with a bad loan is greater than the opportunity cost from missed good loans.
+  For this analysis, recall is more important than precision, assuming the loss associated with a bad loan is greater than the opportunity cost from missed good loans.
 
-F1 is a measure of balance between precision and recall. All of our algorithms have a low F1 score.
+* F1 is a measure of balance between precision and recall. All of our algorithms have a low F1 score.
 
-The balanced accuracy score is amother measure of prediction ability, adjusted for the imbalance between high and low risk loans in the sample. It will tend to be inflated in highly imbalanced datasets such as the one used in this study.
+* The balanced accuracy score is amother measure of prediction ability, adjusted for the imbalance between high and low risk loans in the sample. It will tend to be inflated in highly imbalanced datasets such as the one used in this study.
 
 Reviewing a combination of metrics is the best way to assess the various algorithms.
 
-Notes: in these analyses, high risk is coded as 0 and low risk is coded as 1.
+Notes: 
+* In these analyses, high risk is coded as 0 and low risk is coded as 1.
 
-The confusion matrix is read as:
+* The confusion matrix is read as:
         
         predicted high risk     predicted low risk
 
-actually high
+  actually high
 
-actually low 
+  actually low 
 
+### Summary by Algorithm
 
 #### Oversampling - Naive Random Algorithm
 

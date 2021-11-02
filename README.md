@@ -1,4 +1,4 @@
-# Credit_Risk_Analysis
+# Supervised Machine Learning and Unbalanced Classification on Credit Risk Data
 
 ## Overview
 
